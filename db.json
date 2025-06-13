@@ -1,69 +1,95 @@
 {
   "users": [
     {
-      "id": "user123",
-      "phone": "+221777777777",
-      "name": "User Name",
-      "avatar": "url_avatar",
-      "status": "Hey there! I am using WhatsApp",
-      "createdAt": "2024-01-10T10:00:00Z"
+      "id": "1",
+      "phone": "+221 77 123 45 67",
+      "firstName": "AbdAllah",
+      "lastName": "",
+      "name": "AbdAllah",
+      "countryCode": "SN",
+      "status": "Hey! J'utilise WhatsApp",
+      "online": false,
+      "avatar": "./src/assets/images/profile.jpeg",
+      "registeredAt": "2024-01-10T10:00:00Z",
+      "lastLogin": "2024-01-10T10:00:00Z"
     }
   ],
   "contacts": [
     {
-      "id": "contact123",
-      "userId": "user123",
-      "contactId": "user456",
-      "name": "Contact Name",
-      "blocked": false
+      "id": "1",
+      "name": "AbdAllah",
+      "phone": "+221 77 123 45 67",
+      "status": "Hey! J'utilise WhatsApp",
+      "online": false,
+      "avatar": "./src/assets/images/profile.jpeg"
+    },
+    {
+      "id": "2",
+      "name": "Khouss",
+      "phone": "+221 77 234 56 78",
+      "status": "Occupé",
+      "online": true,
+      "avatar": "https://api.dicebear.com/6.x/initials/svg?seed=Khouss"
+    },
+    {
+      "id": "3",
+      "name": "Moussa",
+      "phone": "+221 77 345 67 89",
+      "status": "Disponible",
+      "online": false,
+      "avatar": "https://api.dicebear.com/6.x/initials/svg?seed=Moussa"
     }
   ],
   "chats": [
     {
-      "id": "chat123",
-      "type": "individual",
-      "participants": ["user123", "user456"],
-      "createdAt": "2024-01-10T10:00:00Z",
-      "lastMessage": "1749642015054",
-      "archived": false
-    }
-  ],
-  "groups": [
+      "id": "1",
+      "name": "Khouss",
+      "lastMessage": "Salut ! Comment ça va ?",
+      "timestamp": "14:30",
+      "unreadCount": 2,
+      "avatar": "https://api.dicebear.com/6.x/initials/svg?seed=Khouss",
+      "online": true,
+      "status": "En ligne",
+      "messages": []
+    },
     {
-      "id": "group123",
-      "name": "Group Name",
-      "description": "Group Description",
-      "avatar": "url_avatar",
-      "adminIds": ["user123"],
-      "members": ["user123", "user456"],
-      "createdAt": "2024-01-10T10:00:00Z"
+      "id": "2",
+      "name": "Moussa",
+      "lastMessage": "À bientôt !",
+      "timestamp": "12:15",
+      "unreadCount": 0,
+      "avatar": "https://api.dicebear.com/6.x/initials/svg?seed=Moussa",
+      "online": false,
+      "status": "Vu pour la dernière fois à 12:15",
+      "messages": []
     }
   ],
   "messages": [
     {
-      "id": "1749642015054",
-      "chatId": "chat123",
-      "senderId": "user123",
-      "receiverId": "user456",
-      "text": "Hello!",
-      "timestamp": "11:40",
+      "id": "1",
+      "chatId": "1",
+      "senderId": "2",
+      "text": "Salut ! Comment ça va ?",
+      "timestamp": "14:30",
+      "isMe": false,
       "sent": true,
       "delivered": true,
       "read": false,
       "type": "text"
+    },
+    {
+      "id": "2",
+      "chatId": "2",
+      "senderId": "3",
+      "text": "À bientôt !",
+      "timestamp": "12:15",
+      "isMe": false,
+      "sent": true,
+      "delivered": true,
+      "read": true,
+      "type": "text"
     }
   ],
-  "status": [
-    {
-      
-      "id": "status123",
-      "userId": "user123",
-      "content": "url_media",
-      "type": "image",
-      "caption": "My status",
-      "createdAt": "2024-01-10T10:00:00Z",
-      "expiresAt": "2024-01-11T10:00:00Z",
-      "viewedBy": ["user456"]
-    }
-  ]
+  "groups": [],
+  "status": []
 }
